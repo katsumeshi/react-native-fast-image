@@ -50,7 +50,7 @@
     "react-test-renderer": "16.0.0"
   },
   "engines": {
-    "node": ">=8.6.0"
+    "node": "~8.6.0"
   },
   "jest": {
     "preset": "react-native",

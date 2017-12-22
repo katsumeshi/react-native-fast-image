@@ -31,7 +31,7 @@
   },
   "scripts": {
     "format": "prettier --write --no-semi --single-quote --trailing-comma all ./FastImage.js ./example/*.js ./example/fastImage/*.js ./server/*.js",
-    "prepare": "git submodule update --recursive",
+    "prepare": "git submodule init && git submodule update",
     "test": "yarn run test:pretty && yarn run test:jest",
     "test:jest": "jest *.js",
     "test:pretty": "prettier-check --write --no-semi --single-quote --trailing-comma all ./FastImage.js ./example/*.js ./example/fastImage/*.js ./server/*.js"

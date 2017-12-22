@@ -31,7 +31,7 @@
   },
   "scripts": {
     "format": "prettier --write --no-semi --single-quote --trailing-comma all ./FastImage.js ./example/*.js ./example/fastImage/*.js ./server/*.js",
-    "prepare": "git clone https://github.com/rs/SDWebImage/tree/ad9f1a24360b2c7581f136e3bd987ff700862ce7 ios/Vendor/SDWebImage",
+    "prepare": "git clone https://github.com/rs/SDWebImage.git ios/Vendor/SDWebImage && git checkout ad9f1a24360b2c7581f136e3bd987ff700862ce7",
     "test": "yarn run test:pretty && yarn run test:jest",
     "test:jest": "jest *.js",
     "test:pretty": "prettier-check --write --no-semi --single-quote --trailing-comma all ./FastImage.js ./example/*.js ./example/fastImage/*.js ./server/*.js"
